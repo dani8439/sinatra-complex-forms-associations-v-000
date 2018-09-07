@@ -27,7 +27,7 @@ class PetsController < ApplicationController
   post '/pets/:id' do
     @pet = Pet.find(params[:id])
 
-    if !params[:pet]
+    if !params[:pet].keys.include?("owner_id")
 
     redirect to "pets/#{@pet.id}"
   end
