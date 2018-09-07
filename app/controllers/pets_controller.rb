@@ -28,8 +28,11 @@ class PetsController < ApplicationController
     @pet = Pet.find(params[:id])
 
     if !params[:pet].values.include?("owner_name")
-      params[:pet]["owner_id"] = []
+      params[:pet][:owner_id] = []
     end
+
+    @pet.update(params[:pet])
+    if !params[:owner][:name]
 
     redirect to "pets/#{@pet.id}"
   end
