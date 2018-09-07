@@ -12,7 +12,7 @@
   <label>Choose an existing owner:</label>
 
   <%Owner.all.each do |owner|%>
-    <input type="checkbox" name=
+    <input type="checkbox" name="owner[name]" value="<%= owner.name %>"
 
   <input type="submit" value="Create Pet">
 
