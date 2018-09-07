@@ -27,3 +27,5 @@ class OwnersController < ApplicationController
    
   end
 end
+
+# {"owner" => {"name" => "Adele", "pet_ids" => ["1", "2"]}}
