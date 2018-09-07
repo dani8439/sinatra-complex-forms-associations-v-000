@@ -27,7 +27,7 @@ class PetsController < ApplicationController
   post '/pets/:id' do
     @pet = Pet.find(params[:id])
 
-    if !params[]
+    if !params[:pet]
 
     redirect to "pets/#{@pet.id}"
   end
