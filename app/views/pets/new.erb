@@ -11,6 +11,8 @@
 
   <label>Choose an existing owner:</label>
 
+  <br></br>
+
   <% Owner.all.each do |owner|%>
     <input type="checkbox" name="owner[name]" value="<%= owner.name %>" id="<%= owner.id %>"><%= owner.name %></input>
   <% end %>
