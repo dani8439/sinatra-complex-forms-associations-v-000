@@ -13,6 +13,7 @@
 
   <%Owner.all.each do |owner|%>
     <input type="checkbox" name="owner[name]" value="<%= owner.name %>" id="<%= owner.id %>"><%= owner.name %></input>
+  <% end %>
 
   <input type="submit" value="Create Pet">
 
